@@ -45,4 +45,4 @@ if __name__ == "__main__":
         result = predict_iris2(transaction)
         transaction['predicted'] = result #add to message
         producer.send(PREDICT_TOPIC, value=transaction)
-        print(transaction, result)  # DEBUG
+        #print(transaction, result)  # DEBUG
